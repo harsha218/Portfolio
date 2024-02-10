@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Sree Harsha Chinta</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .blobify {
+      animation: bloby 4s ease-in-out infinite;
+    }
+
+    .reverseBlobify {
+      animation: antibloby 5s ease-in-out infinite;
+    }
+
+    @keyframes bloby {
+      0% {
+        border-radius: 51% 49% 48% 52% / 45% 50% 50% 55%;
+      }
+
+      50% {
+        border-radius: 63% 37% 67% 33% / 39% 60% 40% 61%;
+      }
+
+      100% {
+        border-radius: 51% 49% 48% 52% / 45% 50% 50% 55%;
+      }
+    }
+
+    @keyframes antibloby {
+      0% {
+        border-radius: 73% 27% 78% 22% / 24% 70% 30% 76%;
+      }
+
+      50% {
+        border-radius: 33% 67% 73% 27% / 71% 53% 47% 29%;
+      }
+
+      100% {
+        border-radius: 73% 27% 78% 22% / 24% 70% 30% 76%;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
+  <div id="cursor-bg" class="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute" style="background:radial-gradient(
+              600px circle at 0px 0px,
+              rgba(29, 78, 216, 0.15),
+              transparent 80%
+            )"></div>
+  <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"><a
+      href="#content"
+      class="absolute left-0 top-0 block -translate-x-full rounded bg-gradient-to-br from-teal-400 via-blue-500 to-purple-600 px-4 py-3 text-sm font-bold uppercase tracking-widest text-white focus-visible:translate-x-0">Skip
+      to Content</a>
+    <div></div>
+    <div class="lg:flex lg:justify-between lg:gap-4">
+      <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+
+        <!-- Image and Blobs -->
+        <div>
+          <div class="relative flex items-center">
+            <div class="relative w-250 h-250 m-10">
+              <div class="reverseBlobify absolute top-0 left-0 w-full h-full overflow-clip"
+                style="background-color: #B9EDE5; backdrop-filter: blur(10px);">
+                <div
+                  style="backdrop-filter: blur(15px); background-color: rgba(255, 255, 255, 0.5); width: 100%; height: 100%;">
+                </div>
+              </div>
+              <div class="blobify relative text-white text-center transition duration-500 z-50 overflow-clip"
+                style="width: 250px; height: 250px;">
+                <img class="absolute top-0 left-0" src="./me.jpg" width="250" height="250" />
+              </div>
+            </div>
+          </div>
+
+          <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl"><a href="/">Sree Harsha Chinta</a>
+          </h1>
+          <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Senior Software Engineer at
+            Sureify</h2>
+          <p class="mt-4 max-w-xs leading-normal">I build accessible, inclusive products and digital
+            experiences for the web.</p>
+
+        </div>
+
+        <!-- Contact me -->
+        <ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
+          <li class="mr-5 text-xs"><a class="block hover:text-slate-200" href="https://github.com/harsha218"
+              target="_blank" rel="noreferrer"><span class="sr-only">GitHub</span><svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6"
+                aria-hidden="true">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                </path>
+              </svg></a></li>
+          <li class="mr-5 text-xs"><a class="block hover:text-slate-200"
+              href="https://www.linkedin.com/in/sree-harsha-chinta-%E2%9A%9B-8b6b61199/" target="_blank"
+              rel="noreferrer"><span class="sr-only">LinkedIn</span><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6" aria-hidden="true">
+                <path
+                  d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                </path>
+              </svg></a></li>
+        </ul>
+      </header>
+
+      <!-- Right Content -->
+      <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+        <section id="about" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-24 lg:scroll-mt-24" aria-label="About me">
+          <div
+            class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:mx-auto lg:w-full lg:px-0 lg:py-0">
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200">About
+            </h2>
+          </div>
+          <div>
+            <p class="mb-4">I am a hardworking individual with a relentless drive to achieve excellence in all that I
+              do.
+              With a dependable nature, I consistently deliver results that exceed expectations.
+              My ability to quickly grasp new concepts and adapt to changing environments sets me apart.</p>
+            <p class="mb-4">In 2019, I landed my first job at Infosys, where I had the privilege of training on the
+              MERN stack. I consider myself fortunate to have been placed in a project with exceptional mentors, from
+              whom I learned to develop small-scale React applications. Over the course of two years, I honed my
+              skills in building various UI applications.</p>
+            <p class="mb-4">My journey took an exciting turn when I joined Sureify, a company that quickly felt like
+              family.
+              Starting as a frontend developer, I soon seized the opportunity to broaden my expertise into backend
+              development.
+              For the next two years, I served as a full-stack developer, playing a key role in delivering Sureify's
+              <a class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+                href="https://www.sureify.com/lifetimeacquire/" target="_blank" rel="noreferrer">Lifetime Acquire
+                Product</a> to a major insurance client.
+            </p>
+            <p class="mb-4">
+            </p>
+          </div>
+        </section>
+
+        <section id="experience" class="mb-16 scroll-mt-12 md:mb-24 lg:mb-24 lg:scroll-mt-20"
+          aria-label="Work experience">
+          <div
+            class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:mx-auto lg:w-full lg:px-0 lg:py-0">
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200">
+              Experience</h2>
+          </div>
+          <div>
+            <ol class="group/list">
+              <li class="mb-12">
+                <div
+                  class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div
+                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                  </div>
+                  <header
+                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                    aria-label="Oct 2019 — Nov 2021">Oct 2019 — Nov 2021</header>
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div><a
+                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                          href="https://www.infosys.com/" target="_blank" rel="noreferrer"
+                          aria-label="Systems Engineer at Infosys"><span
+                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Systems
+                            Engineer ·<!-- --> <span class="inline-block">Infosys<svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20" fill="currentColor"
+                                class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                  clip-rule="evenodd"></path>
+                              </svg></span></span></a></div>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal">At Infosys, I received comprehensive training as a MERN
+                      stack developer. Shortly thereafter, I transitioned to a role within the UI Solutions team,
+                      where I collaborated with my colleagues to develop numerous small-scale React applications.</p>
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          React</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          JavaScript</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          SCSS</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          SPFX</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          Sharepoint</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="mb-12">
+                <div
+                  class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div
+                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                  </div>
+                  <header
+                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                    aria-label="Nov 2021 — Sep 2022">Nov 2021 — Sep 2022</header>
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div><a
+                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                          href="https://www.sureify.com/lifetimeacquire/" target="_blank" rel="noreferrer"
+                          aria-label="Software Engineer II at Sureify"><span
+                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Software
+                            Engineer II ·<!-- --> <span class="inline-block">Sureify<svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                  clip-rule="evenodd"></path>
+                              </svg></span></span></a></div>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal">Upon joining Sureify, I assumed the role of Frontend React
+                      developer. During this period, I actively contributed to resolving critical issues and enhancing
+                      existing features alongside my team. Within a few months, I transitioned to Backend development,
+                      utilizing PHP to further bolster our project capabilities.</p>
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          React</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          Node.js</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          MySql</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          PHP</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          Redis</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          Styled Components</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="mb-12">
+                <div
+                  class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div
+                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                  </div>
+                  <header
+                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                    aria-label="Oct 2022 — Sep 2023">Oct 2022 — Sep 2023</header>
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div><a
+                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                          href="https://www.sureify.com/lifetimeacquire/" target="_blank" rel="noreferrer"
+                          aria-label="Software Engineer III at Sureify"><span
+                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Software
+                            Engineer III ·<!-- --> <span class="inline-block">Sureify<svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                  clip-rule="evenodd"></path>
+                              </svg></span></span></a></div>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal">I was involved in the development of a database-driven
+                      application called Lifetime Acquire, designed to assist Insurance Carriers in acquiring new
+                      customers. As my tenure progressed, I took on increased responsibilities, including the
+                      development of new features, streamlining deployment processes, participating in PI Plannings,
+                      and mentoring junior developers.</p>
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          MySql</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          PHP</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          React</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          Node.js</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          Resqueue Scheduler</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="mb-12">
+                <div
+                  class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div
+                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                  </div>
+                  <header
+                    class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                    aria-label="2023 Oct to Present">Oct 2023 — Present</header>
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div><a
+                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                          href="https://www.sureify.com/coreconnect/" target="_blank" rel="noreferrer"
+                          aria-label="Senior Software Engineer at Sureify"><span
+                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Senior
+                            Software Engineer ·<!-- --> <span class="inline-block">Sureify<svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                  clip-rule="evenodd"></path>
+                              </svg></span></span></a></div>
+                    </h3>
+                    <p class="mt-2 text-sm leading-normal">While concurrently contributing to Lifetime Acquire, I
+                      began working on Coreconnect, a system designed to aid Insurance Carriers in processing data
+                      from their legacy systems.</p>
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          React</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          Postgres Sql</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          TypeScript</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          MUI</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ol>
+
+            <div class="mt-12">
+              <a class="inline-flex items-center font-medium leading-tight text-slate-200 group"
+                aria-label="View Full Résumé" href="./resume.pdf">
+                <span>
+                  <span
+                    class="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">View
+                    Full<!-- -->
+                  </span>
+                  <span class="whitespace-nowrap">
+                    <span
+                      class="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">Résumé</span><svg
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                      class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
+                      aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                        clip-rule="evenodd">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-16 lg:scroll-mt-24"
+          aria-label="Personal Projects">
+          <div
+            class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:mx-auto lg:w-full lg:px-0 lg:py-0">
+            <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200">
+              Personal Projects</h2>
+          </div>
+          <div>
+            <ul class="group/list">
+
+              <li class="mb-12">
+                <div
+                  class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div
+                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                  </div>
+                  <div class="z-10 sm:order-2 sm:col-span-6">
+                    <h3><a
+                        class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                        href="https://harsha218.github.io/Boids-Simulator/" target="_blank" rel="noreferrer"
+                        aria-label="Boids Simulator"><span
+                          class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Boids
+                          Simulator<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                              clip-rule="evenodd"></path>
+                          </svg></span></span></a></h3>
+                    <p class="mt-2 text-sm leading-normal">A simple JS program that simulates the Concept of boids.
+                    </p>
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          HTML</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          CSS</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          JavaScript</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="mb-12">
+                <div
+                  class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div
+                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                  </div>
+                  <div class="z-10 sm:order-2 sm:col-span-6">
+                    <h3><a
+                        class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                        href="https://github.com/harsha218/sorting-visualizer-react" target="_blank" rel="noreferrer"
+                        aria-label="Sorting Visualizer"><span
+                          class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Sorting
+                          Visualizer
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                              clip-rule="evenodd"></path>
+                          </svg></span></span></a></h3>
+                    <p class="mt-2 text-sm leading-normal">A Sorting Visualizer which helps understand how different
+                      sorting techniques work.</p>
+
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          React</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          Redux</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          Apex Charts</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="mb-12">
+                <div
+                  class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div
+                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                  </div>
+                  <div class="z-10 sm:order-2 sm:col-span-6">
+                    <h3><a
+                        class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                        href="https://harsha218.github.io/url-shortening-api-master/#" target="_blank" rel="noreferrer"
+                        aria-label="URL Shortener">
+                        <span
+                          class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>URL
+                          Shortener<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                              clip-rule="evenodd"></path>
+                          </svg></span></span></a></h3>
+                    <p class="mt-2 text-sm leading-normal">It is a Frontend Mentor challenge where I build a simple
+                      URL shortener with good UI. </p>
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          HTML</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          CSS</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          JavaScript</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="mb-12">
+                <div
+                  class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div
+                    class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                  </div>
+                  <div class="z-10 sm:order-2 sm:col-span-6">
+                    <h3><a
+                        class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                        href="https://harsha218.github.io/sunnyside-agency-landing-page-fme-challenge/" target="_blank"
+                        rel="noreferrer" aria-label="Sunnyside Agency">
+                        <span
+                          class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                        <span>Sunnyside Agency Landing Page<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                              clip-rule="evenodd"></path>
+                          </svg></span></span></a></h3>
+                    <p class="mt-2 text-sm leading-normal">It is a Frontend Mentor challenge where I build a simple
+                      Landing page for Sunnyside Agency. </p>
+                    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used:">
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          HTML</div>
+                      </li>
+                      <li class="mr-1.5 mt-2">
+                        <div
+                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                          SCSS</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script>
+    const cursorBg = document.getElementById('cursor-bg');
+
+    document.onmousemove = function (event) {
+      var x = event.clientX;
+      var y = event.clientY;
+
+      cursorBg.style.background = `radial-gradient(100px circle at ${x}px ${y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+    };
+  </script>
+</body>
+
+</html>
